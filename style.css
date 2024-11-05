@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(#F4D9D0,#C1ACA5);
+    background-repeat: no-repeat;
+}
+
+header{
+
+    background-image: url(headerimg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:60vh;
+    margin-top: 5vh;
+    color: white;
+}
+
+#webname{
+
+    position: relative;
+    top:10vh;
+}
+
+#webmessage{
+
+    position: relative;
+    top:10rem;
+    left:70vw;
+    
+}
+
+.pink_heading{
+    color: #6A0928;
+}
