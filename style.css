@@ -37,3 +37,53 @@ header{
 .pink_heading{
     color: #6A0928;
 }
+
+.pink_button{
+    background-color: #6A0928;
+    color: white;
+    padding:0.5rem;
+
+}
+
+.faq1{
+    background-color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    width:70vw;
+}
+
+footer{
+
+    background-color: #6A0928;
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:30vh;
+    margin-top: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+#navbar{
+    position: relative;
+    bottom:3rem;
+    left:7rem;
+    display:flex;
+    justify-content: space-evenly;
+    width:30vw;
+    color:#6A0928;
+    font-weight: bolder;
+
+}
+
+.login{
+   
+    position: relative;
+    right:-90vw;
+    bottom:4rem;
+    padding: 0.5rem;
+
+}
