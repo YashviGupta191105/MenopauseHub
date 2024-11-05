@@ -9,7 +9,7 @@ body{
     background-repeat: no-repeat;
 }
 
-header{
+#header_home{
 
     background-image: url(headerimg.jpeg);
     background-repeat: no-repeat;
@@ -86,4 +86,49 @@ li{
     bottom:4rem;
     padding: 0.5rem;
 
+}
+
+#features{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar_other{
+
+    display:flex;
+    justify-content: space-evenly;
+    width:30vw;
+    color:#6A0928;
+    font-weight: bolder;
+    position: relative;
+    right:-60vw;
+    bottom:2rem;
+    align-items: center;
+}
+
+.login-container{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    position: relative;
+    left: 35vw;
+    background-color: white;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
+    width:30vw;
+    height:40vh;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-btn{
+    width:4vw;
 }
