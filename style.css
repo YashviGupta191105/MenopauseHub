@@ -151,3 +151,70 @@ form{
     align-items: center;
     padding-left: 2rem;
 }
+
+
+.featcommon{
+    display: flex;
+    flex-direction: column;
+    height:30vh;
+    width:20vw;
+    padding-top: 1rem;
+    text-align: center;
+}
+.feat1-image{
+    background-image: url("homepagefeature1.jpg");
+    background-size: cover;
+    height:25vh;
+    width:20vw;
+}
+
+.feat2-image{
+      background-image: url("dietandtipsimage.jpg");
+    background-size: cover;
+    height:25vh;
+}
+
+.feat3-image{
+    background-image: url("expertadviceimage.jpg");
+    background-size: cover;
+    height:25vh;
+}
+
+.feat4-image{
+    background-image: url("communitysupportimage.jpg");
+    background-size: cover;
+    height:25vh;
+}
+button{
+    border: none;
+}
+
+.common-tips-main-image{
+
+    background-image: url("common-tips-mains-image.png");
+    height:50vh;
+    width:30vw;
+    background-size:cover;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    
+
+}
+
+.features-elaborated-on-home-page{
+    height:60vh;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+     
+}
+
+
+.family-support-main-image{
+
+    background-image: url("familys-support-main-image.png");
+    height:50vh;
+    width:30vw;
+    background-size:cover;
+}
