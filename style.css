@@ -52,6 +52,25 @@ body{
     width:70vw;
 }
 
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AA1945; /* Customize button background color */
+    color: #fff; /* Button text color */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f2a0c0; /* Change background color on hover */
+}
+
+
 footer{
 
     background-color: #6A0928;
