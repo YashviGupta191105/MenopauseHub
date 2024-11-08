@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menopause Symptom Tracker</title>
+    <link rel="stylesheet" href="tracker.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js CDN -->
+</head>
+<body>
+    <header>
+        <h1>Menopause Symptom Tracker</h1>
+    </header>
+
+    <main>
+        <section class="log-symptoms">
+            <h2>Log Your Symptoms</h2>
+            <form id="symptom-form">
+                <label for="symptom">Symptom:</label>
+                <select id="symptom" required>
+                    <option value="Hot Flashes">Hot Flashes</option>
+                    <option value="Mood Swings">Mood Swings</option>
+                    <option value="Sleep Disturbance">Sleep Disturbance</option>
+                    <option value="Night Sweats">Night Sweats</option>
+                    <option value="Fatigue">Fatigue</option>
+                </select>
+
+                <label for="severity">Severity (1-10):</label>
+                <input type="number" id="severity" min="1" max="10" required>
+
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes"></textarea>
+
+                <button type="submit">Log Symptom</button>
+            </form>
+        </section>
+
+        <section class="symptom-history">
+            <h2>Symptom History</h2>
+            <div id="symptom-history">
+                <!-- History of logged symptoms will be displayed here -->
+            </div>
+        </section>
+
+        <!-- Multiple Graph Sections -->
+        <section class="symptom-graphs">
+            <h2>Symptom Severity Over Time</h2>
+            <div>
+                <h3>Hot Flashes</h3>
+                <canvas id="hotFlashesChart" width="400" height="200"></canvas>
+            </div>
+            <div>
+                <h3>Mood Swings</h3>
+                <canvas id="moodSwingsChart" width="400" height="200"></canvas>
+            </div>
+            <div>
+                <h3>Sleep Disturbance</h3>
+                <canvas id="sleepDisturbanceChart" width="400" height="200"></canvas>
+            </div>
+            <div>
+                <h3>Night Sweats</h3>
+                <canvas id="nightSweatsChart" width="400" height="200"></canvas>
+            </div>
+            <div>
+                <h3>Fatigue</h3>
+                <canvas id="fatigueChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Menopause Tracker App</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
