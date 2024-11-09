@@ -448,6 +448,14 @@ button{
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    height: 400px; /* Set the height you need */
+    overflow-y: auto; /* Enables vertical scrolling */
+    /*padding: 10px;*/
+    box-sizing: border-box;
+    width: 95%;
+    margin-left: 1rem;
+    height: 10 rem;
+    height: 80vh; /* Takes up 80% of the viewport height */
 }
 
 .row {
@@ -457,6 +465,15 @@ button{
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+
+
+        height: 500px; /* Set the height you need */
+        overflow-y: auto; /* Enables vertical scrolling */
+       /* padding: 10px;*/
+        box-sizing: border-box;
+    width:25rem;
+    height: 80vh;
+    margin-right: 80px; /* Adjust the value to shift as much as needed */
 }
 
 
@@ -541,19 +558,27 @@ button{
 
 /*reddit like*/
 .navbar-for-feed {
-    background-color: #ffffff;
-    padding: 10px 50px;
+    background-color: #f1bece;
+    padding: 20px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
     margin-top: -10rem;
     margin-left: -10rem;
+    /* Gradient background */
+    background: linear-gradient(90deg, #e49191, #f6b7b7, #eac8c8);
+
+    color: #fff; /* Set text color for better contrast */
+    width: 100rem;
+
+
 }
 
 .navbar-for-feed h1 {
     margin: 0;
     color: #ff4500; /* Reddit orange */
+
 }
 
 .navbar-for-feed input[type="text"] {
@@ -595,7 +620,14 @@ button{
 }
 
 .main-content-for-feed {
-    flex: 1;
+         flex: 1;
+
+       /* height: 400px; !* Set the height you need *!
+        overflow-y: auto; !* Enables vertical scrolling *!
+        padding: 10px;
+        box-sizing: border-box;*/
+
+
 }
 
 .post-for-feed {
@@ -700,4 +732,42 @@ button{
     justify-content: space-evenly;
     height: 100vh;
     padding: 1rem;
+}
+
+/*
+moodselection part community*/
+.mood-selector {
+    text-align: center;
+    margin: 20px;
+}
+
+.mood-button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #320808;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dialog button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
 }

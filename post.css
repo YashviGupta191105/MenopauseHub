@@ -60,3 +60,101 @@ body{
     width: 90%;
     alline: center;
 }
+
+/*post image*/
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+#postSection {
+    margin: 20px;
+}
+
+.post-for-feed {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #f6b7b7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #6e2424;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dialog button {
+    background-color: white;
+    color: #aa1945;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+/*
+post already avail*/
+
+.header-posted {
+    background-color: #5d3ba7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.post-posted {
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-meta {
+    color: #555;
+    font-size: 12px;
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.post-content {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.post-actions div {
+    display: flex;
+    align-items: center;
+}
+
+.post-actions span {
+    margin-left: 5px;
+    font-size: 12px;
+}

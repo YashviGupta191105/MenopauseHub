@@ -6,6 +6,7 @@
     <title>Menopause Support Community</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="post.css">
+
 </head>
 <body>
 
@@ -35,7 +36,7 @@
 
 
 
-<main>
+<div>
 
 
 
@@ -58,18 +59,72 @@
                 </div>
                 <div class="main-content-for-feed">
                     <div class="post-for-feed">
-                        <h2>Post Title 1</h2>
-                        <p>Content of the post goes here...</p>
+
+
+                        <div class="post-posted">
+                            <div class="post-meta">No_Dog6347 • 9h • 22.5k views</div>
+                            <div class="post-title">my mom started menopause and shes going crazy and I don’t know how to deal with it im really scared</div>
+                            <div class="post-content">My mom hits me and is always angry. One time I didn’t drink water when she wanted to and she started screaming at me and calling me names. My mom told me to clean th...</div>
+                            <div class="post-actions">
+                                <div>⬆️ 72</div>
+                                <div> <button class="comment-button">💬</button> 64</div>
+                                <script src="post.js"></script>
+                                <div>🔖 22</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="post-for-feed">
-                        <h2>Post Title 2</h2>
-                        <p>Content of the post goes here...</p>
+
+                        <div class="post-posted">
+                            <div class="post-meta">SettingNo7876 • 16h • 17.5k views</div>
+                            <div class="post-title">Dear Menopause, I hate you.</div>
+                            <div class="post-content">Going to work, walking through employee parking lot, to main airport terminal, which is 15 minutes, feeling like I lost weight, more pep in my step, even feeling confident, thinki...</div>
+                            <div class="post-actions">
+                                <div>⬆️ 224</div>
+                                <div> <button class="comment-button">💬</button>  16</div>
+                                <script src="post.js"></script>
+                                <div>🔖 10</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="post-for-feed">
-                        <h2>Post Title 3</h2>
-                        <p>Content of the post goes here...</p>
+
+                        <div class="post-posted">
+                            <div class="post-meta">ICCG_PDX • 13h • 15.9k views</div>
+                            <div class="post-title">Progesterone is amazing!</div>
+                            <div class="post-content">Two weekends ago, I attended a menopause retreat with a group of women, and it was wonderful in terms of learning more about the menopause journey in general, as well as ...</div>
+                            <div class="post-actions">
+                                <div>⬆️ 143</div>
+                                <div>  <button class="comment-button">💬</button>  43</div>
+                                <script src="post.js"></script>
+                                <div>🔖 16</div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="post-for-feed">
+
+
+                        <div class="post-posted">
+                            <div class="post-meta">cheezyeballz • 16h • 68.3k views</div>
+                            <div class="post-title">If HRT gets banned, doesn't that mean for you all, too?</div>
+                            <div class="post-actions">
+                                <div>⬆️ 67</div>
+                                <div> <button class="comment-button">💬</button>  8</div>
+                                <script src="post.js"></script>
+                                <div>🔖 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <section id="postSection">
+                        <h2>Your Feed</h2>
+                        <div class="post-for-feed" id="postContent">
+                            <!-- Uploaded images will appear here -->
+                        </div>
+                    </section>
+
+
                 </div>
+
             </div>
 
         </div>
@@ -126,6 +181,8 @@
     </div>
 
 <!--post-->
+
+
     <!-- Area where posted messages will appear -->
     <div id="postedMessages" class="posted-messages"></div>
     </div>
@@ -134,10 +191,24 @@
         <textarea id="messageBox" class="message-box-post placeholder="Enter your message..."></textarea>
         <!-- Post button to trigger the JavaScript function -->
         <button class="post-button-post" onclick="postMessage()">Post</button>
+        <button id="uploadButton">Upload Image</button>
+        <input type="file" id="imageInput" accept="image/*" style="display: none;" />
     </div>
 
 
-    <script src="post.js"></script>
+
+<div id="errorDialog" class="dialog" style="display: none;">
+    <p>Server connection issue. Please try again later.</p>
+    <button onclick="closeDialog()">Close</button>
+</div>
+
+<script src="post.js"></script>
+
+
+
+
+
+
 
 
     <section class="mood-selector">
@@ -151,17 +222,25 @@
             <button class="mood-button">Hopeful</button>
             <button class="mood-button">Pretty good</button>
         </div>
+
+        <!-- Dialog Box -->
+        <div id="responseDialog" class="dialog" style="display: none;">
+            <p>Thank you, your response has been submitted!</p>
+            <button onclick="closeDialog()">Close</button>
+
+        </div>
+        <script src="moood.js"></script>
     </section>
 
     <section id="feed" class="feed">
-        <h2>Your Feed</h2>
+        <h2>COMMENT SECTION</h2>
         <div class="post">
             <p>Having a difficult time dealing with menopause symptoms, but trying to stay positive.</p>
             <div class="post-info">
                 <span>❤️ 21 reactions</span> | <span>💬 9 comments</span>
             </div>
             <div class="post">
-                <h3>Comment</h3>
+                <h3>Reply</h3>
                 <p>GOOOOOOO GIRL!!!! we are with you</p>
                 <div class="post-info">
                     <span>❤️ 4 reactions</span> | <span>💬 2 comments</span>
@@ -173,6 +252,13 @@
             <div class="post-info">
                 <span>❤️ 21 reactions</span> | <span>💬 9 comments</span>
             </div>
+        </div>
+       <!-- comment box -->
+        <!-- Comments Display Area -->
+        <div class="comments" id="commentsContainer"></div>
+        <div class="comment-form">
+            <textarea id="commentInput" placeholder="Write a comment..."></textarea>
+            <button onclick="addComment()">Post Comment</button>
         </div>
 
 
