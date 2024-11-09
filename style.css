@@ -52,6 +52,97 @@ body{
     width:70vw;
 }
 
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AA1945; /* Customize button background color */
+    color: #fff; /* Button text color */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f2a0c0; /* Change background color on hover */
+}
+
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.family-support {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.family-support h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.family-support p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.tip-of-day {
+    background-color: #ebc5d9ff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tip-of-day h2 {
+    color: #1565c0;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.tip-card:hover {
+    transform: scale(1.05);
+}
+
+.tip-card h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.tip-card p {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
 footer{
 
     background-color: #6A0928;
@@ -357,6 +448,14 @@ button{
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+   /* height: 400px;*/ /* Set the height you need */
+    overflow-y: auto; /* Enables vertical scrolling */
+    /*padding: 10px;*/
+    box-sizing: border-box;
+    width: 95%;
+    margin-left: 1rem;
+    /*height: 10 rem;*/
+    height: 80vh; /* Takes up 80% of the viewport height */
 }
 
 .row {
@@ -366,6 +465,15 @@ button{
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+
+
+        height: 500px; /* Set the height you need */
+        overflow-y: auto; /* Enables vertical scrolling */
+       /* padding: 10px;*/
+        box-sizing: border-box;
+    width:25rem;
+    height: 80vh;
+    margin-right: 80px; /* Adjust the value to shift as much as needed */
 }
 
 
@@ -450,19 +558,27 @@ button{
 
 /*reddit like*/
 .navbar-for-feed {
-    background-color: #ffffff;
-    padding: 10px 50px;
+    background-color: #f1bece;
+    padding: 20px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
     margin-top: -10rem;
     margin-left: -10rem;
+    /* Gradient background */
+    background: linear-gradient(90deg, #e49191, #f6b7b7, #eac8c8);
+
+    color: #fff; /* Set text color for better contrast */
+    width: 100rem;
+
+
 }
 
 .navbar-for-feed h1 {
     margin: 0;
     color: #ff4500; /* Reddit orange */
+
 }
 
 .navbar-for-feed input[type="text"] {
@@ -504,7 +620,14 @@ button{
 }
 
 .main-content-for-feed {
-    flex: 1;
+         flex: 1;
+
+       /* height: 400px; !* Set the height you need *!
+        overflow-y: auto; !* Enables vertical scrolling *!
+        padding: 10px;
+        box-sizing: border-box;*/
+
+
 }
 
 .post-for-feed {
@@ -611,4 +734,42 @@ button{
     justify-content: space-evenly;
     height: 100vh;
     padding: 1rem;
+}
+
+/*
+moodselection part community*/
+.mood-selector {
+    text-align: center;
+    margin: 20px;
+}
+
+.mood-button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #320808;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dialog button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
 }
