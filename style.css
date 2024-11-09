@@ -289,7 +289,7 @@ button{
     margin-bottom: 2rem;
     color: #530832;
     margin-top: -2rem;
-    padding-top: min(0.099px);
+    padding-top: 2rem;
 
 
 }
@@ -344,28 +344,31 @@ button{
 .grid-layout {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 200fr 20fr; /* Adjust column widths as needed */
+    grid-template-columns: 150fr 20fr; /* Adjust column widths as needed */
     grid-template-rows: auto; /* Adjust the row size */
     gap: 20px; /* Space between column and row */
-
+    width: auto;
 }
 
 .column {
     background-color: #fbf9f9;
     color: #fff;
-    padding: 10rem;
+    padding: 12rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    height: 60%;
+
 }
 
 .row {
     background-color: #ffffff;
     color: #fff;
-    padding:5rem;
+    padding:4rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    height:75% ;
 }
 
 
@@ -552,3 +555,7 @@ button{
     height:30vh;
     width:30vw;
 }
+
+/*post*/
+
+.

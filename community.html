@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menopause Support Community</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="post.css">
 </head>
 <body>
 
@@ -124,8 +125,19 @@
         </div>
     </div>
 
+<!--post-->
+    <!-- Area where posted messages will appear -->
+    <div id="postedMessages" class="posted-messages"></div>
+    </div>
+    <div class="message-container-post">
+        <!-- Textarea for entering messages -->
+        <textarea id="messageBox" class="message-box-post placeholder="Enter your message..."></textarea>
+        <!-- Post button to trigger the JavaScript function -->
+        <button class="post-button-post" onclick="postMessage()">Post</button>
+    </div>
 
 
+    <script src="post.js"></script>
 
 
     <section class="mood-selector">
