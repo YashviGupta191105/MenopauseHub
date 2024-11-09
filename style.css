@@ -559,6 +559,8 @@ button{
     width:30vw;
     background-color: white;
     margin: 0.5rem;
+    text-align: left;
+    padding: 1rem;
 }
 
 .doctor-section{
