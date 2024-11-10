@@ -15,6 +15,7 @@ body{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 5% ;
+    margin-top: 2rem;
 
 }
 
@@ -53,12 +54,14 @@ body{
 .posted-message {
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #eac8c8;
+    background-color: #ffffff;
     border-radius: 4px;
-    font-size: 25px;
+   /* font-size: 25px;*/
     border-color: #530832;
     width: 90%;
     alline: center;
+    color: #555;
+    font-size: 12px;
 }
 
 /*post image*/
@@ -193,4 +196,37 @@ post already avail*/
     background-color: #e9e9e9;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+/*
+expand post*/
+.post-posted {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    max-width: 600px;
+}
+.post-meta, .post-title, .post-actions {
+    margin-bottom: 10px;
+}
+.post-content {
+    cursor: pointer;
+    color: #333;
+}
+/* Initially collapsed content with ellipsis */
+.collapsed {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 1.2em;
+}
+.post-actions div {
+    display: inline-block;
+    margin-right: 10px;
+}
+.post-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
 }

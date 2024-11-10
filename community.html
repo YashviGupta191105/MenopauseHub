@@ -23,12 +23,12 @@
     <h1 class="pink_heading"> MENOPAUSE</h1>
     <div id="navbar_other">
         <div> <a href="index.html" class="pink-link"> Home</a> </div>
-        <div> Consult </div>
-        <div> Tracker </div>
-        <div> Community </div>
-        <div><button class="pink_button">
+        <div><a href="consult.html" class="pink-link">  Consult</a> </div>
+        <div> <a href="tracker.html" class="pink-link">Tracker </a> </div>
+        <div> <a href="community.html" class="pink-link">Community </a> </div>
+        <div><button class="pink_button"><a href="login.html" class="pink-link">
             LOGIN
-        </button>
+        </button></a>
         </div>
     </div>
 </header>
@@ -58,21 +58,24 @@
                     </ul>
                 </div>
                 <div class="main-content-for-feed">
+
                     <div class="post-for-feed">
-
-
-                        <div class="post-posted">
-                            <div class="post-meta">No_Dog6347 • 9h • 22.5k views</div>
-                            <div class="post-title">my mom started menopause and shes going crazy and I don’t know how to deal with it im really scared</div>
-                            <div class="post-content">My mom hits me and is always angry. One time I didn’t drink water when she wanted to and she started screaming at me and calling me names. My mom told me to clean th...</div>
-                            <div class="post-actions">
-                                <div>⬆️ 72</div>
-                                <div> <button class="comment-button">💬</button> 64</div>
-                                <script src="post.js"></script>
-                                <div>🔖 22</div>
-                            </div>
+                    <div class="post-posted">
+                        <div class="post-meta">No_Dog6347 • 9h • 22.5k views</div>
+                        <div class="post-title">My mom started menopause and she's going crazy, and I don’t know how to deal with it. I'm really scared</div>
+                        <!-- Initial content with full content stored in data attribute -->
+                        <div class="post-content collapsed" data-full-content="My mom hits me and is always angry. One time I didn't drink water when she wanted to and she started screaming at me and calling me names. My mom told me to clean the backyard and before I could even respond she took my jeans and threw them at me. I got down and I was putting gloves on to clean the dog shit and she belittled me acting like ive never done this before. After I finished, she asked when I wanted dinner and I just replied with later. She blew up. She started screaming at me saying i need to give her a really detailed time and she kept rambling while yelling at me. I said, well it's frozen, i can just heat it up myself, it's okay. She freaked out. She started yelling at me louder and worse. She told me to move out. I'm in Highschool and she told me to move out and she's screaming and i ended up just running back to my room in tears. The other day she called me a pig and hit me on the head. She yells at me like this every single morning and every single night. My dad just tells me to listen to her (on text cause hes out of town) but even when i do she's still as mad. Am i supposed to accept this? I don't have an ounce of empathy for my mother. Even when i start feeling bad for her she makes me regret it every single time. What am i supposed to do? I think this is affecting me mentally and she's coming upstairs rn im really scared I always stay late at school because I don't wanna be home and she does this to my brother too calling him useless. There is no talking to her peacefully please help me someone">
+                            My mom hits me and is always angry. One time I didn't drink water when she wanted to and she started screaming at me and calling me names. My mom told me to clean the backyard and before I could even respond she took my jeans and threw them at me. I got down and I was putting gloves on to clean the dog shit and she belittled me acting like ive never done this before. After I finished, she asked when I wanted dinner and I just replied with "later". She blew up. She started screaming at me saying i need to give her a really detailed time and she kept rambling while yelling at me. I said, well it's frozen, i can just heat it up myself, it's okay. She freaked out. She started yelling at me louder and worse. She told me to move out. I'm in Highschool and she told me to move out and she's screaming and i ended up just running back to my room in tears. The other day she called me a pig and hit me on the head. She yells at me like this every single morning and every single night. My dad just tells me to listen to her (on text cause hes out of town) but even when i do she's still as mad. Am i supposed to accept this? I don't have an ounce of empathy for my mother. Even when i start feeling bad for her she makes me regret it every single time. What am i supposed to do? I think this is affecting me mentally and she's coming upstairs rn im really scared I always stay late at school because I don't wanna be home and she does this to my brother too calling him "useless." There is no talking to her peacefully please help me someone
+                        </div>
+                        <div class="post-actions">
+                            <div>⬆️ 72</div>
+                            <div> <button class="comment-button">💬</button> 64</div>
+                            <div>🔖 22</div>
                         </div>
                     </div>
+                    </div>
+
+
                     <div class="post-for-feed">
 
                         <div class="post-posted">
@@ -95,7 +98,7 @@
                             <div class="post-content">Two weekends ago, I attended a menopause retreat with a group of women, and it was wonderful in terms of learning more about the menopause journey in general, as well as ...</div>
                             <div class="post-actions">
                                 <div>⬆️ 143</div>
-                                <div>  <button class="comment-button">💬</button>  43</div>
+                                <div> <button class="comment-button">💬</button>  43</div>
                                 <script src="post.js"></script>
                                 <div>🔖 16</div>
                             </div>
@@ -117,12 +120,15 @@
                     </div>
                     <section id="postSection">
                         <h2>Your Feed</h2>
+
                         <div class="post-for-feed" id="postContent">
+                            <!-- Area where posted messages will appear -->
+                            <div id="postedMessages" class="posted-messages"></div>
                             <!-- Uploaded images will appear here -->
                         </div>
+
                     </section>
-
-
+                    <script src="post.js"></script>
                 </div>
 
             </div>
@@ -183,9 +189,9 @@
 <!--post-->
 
 
-    <!-- Area where posted messages will appear -->
-    <div id="postedMessages" class="posted-messages"></div>
-    </div>
+
+
+
     <div class="message-container-post">
         <!-- Textarea for entering messages -->
         <textarea id="messageBox" class="message-box-post placeholder="Enter your message..."></textarea>
@@ -202,7 +208,7 @@
     <button onclick="closeDialog()">Close</button>
 </div>
 
-<script src="post.js"></script>
+
 
 
 
@@ -277,7 +283,9 @@
             </div>
 
             &lt;!&ndash; more communities to join as needed &ndash;&gt;
-            <button class="pink_button_Community">EXPLORE MORE</button>
+
+            <button class="pink_button_Community" onclick="window.location.href='community explore.html'">EXPLORE MORE</button>
+
         </section>
     </aside>
 
@@ -288,6 +296,7 @@
 <footer>
     <p>&copy; 2024 Menopause Support Community. All rights reserved.</p>
 </footer>
+    <script src="post.js"></script>
 
 </body>
 </html>

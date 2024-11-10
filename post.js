@@ -140,3 +140,37 @@ function addComment() {
         alert("Please write something before posting!");
     }
 }
+// JavaScript to toggle post content
+document.querySelectorAll('.post-content').forEach(postContent => {
+    postContent.addEventListener('click', function() {
+        if (postContent.classList.contains('collapsed')) {
+            // Expand content
+            postContent.textContent = postContent.getAttribute('data-full-content');
+            postContent.classList.remove('collapsed');
+        } else {
+            // Collapse content
+            const truncatedContent = postContent.getAttribute('data-full-content').slice(0, 100) + '...';
+            postContent.textContent = truncatedContent;
+            postContent.classList.add('collapsed');
+        }
+    });
+});
+
+
+
+
+/*
+community explore*/
+document.querySelectorAll(".join-button").forEach(button => {
+    button.addEventListener("click", () => {
+        if (button.textContent === "Join") {
+            button.textContent = "Joined";
+            button.style.backgroundColor = "#f6b7b7";
+            button.style.color = "#fff";
+        } else {
+            button.textContent = "Join";
+            button.style.backgroundColor = "#ddd";
+            button.style.color = "#6e2424";
+        }
+    });
+});
