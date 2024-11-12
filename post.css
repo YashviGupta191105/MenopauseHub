@@ -59,7 +59,7 @@ body{
    /* font-size: 25px;*/
     border-color: #530832;
     width: 90%;
-    alline: center;
+    align-self: center;
     color: #555;
     font-size: 19px;
 }

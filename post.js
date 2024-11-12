@@ -48,7 +48,7 @@ document.getElementById('imageInput').addEventListener('change', async function 
         }
     }
 });
-
+// Function to display uploaded image in the feed
 function displayImage(imageUrl) {
     const postContent = document.getElementById('postContent');
     const img = document.createElement('img');
@@ -88,15 +88,7 @@ document.getElementById('imageInput').addEventListener('change', async function 
     }
 });
 
-// Function to display uploaded image in the feed
-function displayImage(imageUrl) {
-    const postContent = document.getElementById('postContent');
-    const img = document.createElement('img');
-    img.src = imageUrl;
-    img.alt = "Uploaded Image";
-    img.style.maxWidth = "100%";
-    postContent.appendChild(img);
-}
+
 
 // Show error dialog box for server issues
 function showErrorDialog() {
