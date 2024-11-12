@@ -568,9 +568,10 @@ button{
     margin-left: -10rem;
     /* Gradient background */
     background: linear-gradient(90deg, #e49191, #f6b7b7, #eac8c8);
+    position: absolute;
 
     color: #fff; /* Set text color for better contrast */
-    width: 100rem;
+    width: 70rem;
 
 
 }

@@ -1,6 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
+const mysql = require('mysql');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -85,4 +86,37 @@ app.post('/submit-mood', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
+});
+
+
+// Create a connection to the Vultr MySQL database
+const db = mysql.createConnection({
+    host: 'vultr-prod-40a1ee94-eb56-446c-9b9c-2a9070d51f30-vultr-prod-9e9b.vultrdb.com', // Replace with your Vultr database IP address
+    user: 'vultradmin',         // Replace with your database username
+    password: 'AVNS_GQW4P-aZuhICTqYJTu5',     // Replace with your database password
+    database: 'defaultdb'          // Replace with your database name
+});
+
+// Connect to the database
+db.connect((err) => {
+    if (err) {
+        console.error('Database connection error:', err);
+        return;
+    }
+    console.log('Connected to the MySQL database!');
+});
+
+// Example route to test database connection
+app.get('/test-db', (req, res) => {
+    db.query('SELECT 1 + 1 AS result', (err, results) => {
+        if (err) {
+            return res.status(500).send('Database query error');
+        }
+        res.send(`Database connection is successful. Result: ${results[0].result}`);
+    });
+});
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
